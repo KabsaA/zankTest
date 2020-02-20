@@ -8,12 +8,16 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Zank Site</title>
-  <!-- Custom fonts for this theme -->
+  <title>Zank</title>
+
+  <!-- {{ url_for('static', filename='style.css') }} -->
+
+  <!-- Custom Fonts -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+  <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
 
 </head>
@@ -31,7 +35,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Reference</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
@@ -40,20 +44,63 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
           </li>
         </ul>
+        <!-- Login Button -->
+           <button type="button" class="button1" data-toggle="modal" data-target="#exampleModal3">
+           Login!
+           </button>
+       </div>
       </div>
     </div>
   </nav>
-  <!-- Masthead -->
+  <!-- Login Dropdown -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" color=#B85750 id="exampleModal3Label">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Pass</label>
+                            <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Header Text -->
   <header class="masthead bg-primary text-white text-center">
     <div class="container d-flex align-items-center flex-column">
 
-      <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="img/zank.png" alt="">
+      <!-- Zank Logo -->
+      <img src="img/zankPic.png" alt="">
 
-      <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">Searching..</h1>
-      <input class="form-control" id="name" type="text" placeholder="Search Building Codes" required="required">
-      <a class="btn btn-xl btn-outline-light" href="results.html" role="button">Search Now!</a>
+      <!-- Search Bar  -->
+      <div>
+      <form class="col-xs-4">
+  <input class="form-control mr-sm-2" type="text" placeholder="Search Building Codes" aria-label="Search">
+  <button type="submit">Search</button>
+</form>
+</div>
+
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -64,8 +111,8 @@
         <div class="divider-custom-line"></div>
       </div>
 
-      <!-- Masthead Subheading
-      <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p> -->
+      <!-- Masthead Subheading -->
+      <p class="masthead-subheading font-weight-light mb-0">-Find all information on building codes-</p>
 
     </div>
   </header>
@@ -75,7 +122,7 @@
     <div class="container">
 
       <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Reference</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -183,19 +230,19 @@
         <div class="divider-custom-line"></div>
       </div>
 
-      <!-- About Section Content -->
+      <!-- About Text -->
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit Ut enim ad minim veniam, quis nostrud </p>
+          <h3>What's Zank?</h3>
+          <p class="lead">Zank is your one stop shop to search for all things building codes. You can find ICC regulations and building codes to help you find all answers to questions for your construction projects! (this will also clarify our purpose from feedback one)</p>
         </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit Ut enim ad minim veniam, quis nostrud exercitation ullamco.Lorem ipsum dolor sit amet.</p>
+          <h3>Who's the target audience?</h3>
+          <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
         </div>
       </div>
 
-      <!-- About Section Button -->
-      <div class="text-center mt-4">
-      </div>
+
 
     </div>
   </section>
@@ -205,7 +252,7 @@
     <div class="container">
 
       <!-- Contact Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Us</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -269,8 +316,8 @@
         <!-- Footer Location -->
         <div class="col-lg-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">555 Post Street
-            <br>San Francisco, CA 94108</p>
+          <p class="lead mb-0">2215 John Daniel Drive
+            <br>Clark, MO 65243</p>
         </div>
 
         <!-- Footer Social Icons -->
@@ -292,18 +339,20 @@
 
         <!-- Footer About Text -->
         <div class="col-lg-4">
-          <h4 class="text-uppercase mb-4">Our History</h4>
-          <p class="lead mb-0">Zank was founded in January 2020.</p>
+          <h4 class="text-uppercase mb-4">About Freelancer</h4>
+          <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
+            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
         </div>
 
       </div>
     </div>
   </footer>
 
+
   <!-- Copyright Section -->
   <section class="copyright py-4 text-center text-white">
     <div class="container">
-      <small>Copyright &copy; Zank 2020</small>
+      <small>Copyright &copy; Your Website 2019</small>
     </div>
   </section>
 
